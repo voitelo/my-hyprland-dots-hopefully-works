@@ -1,0 +1,98 @@
+* {
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 13px;
+  border: 1px solid #5a7a5a; /* dull green border */
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  background-color: rgba(220, 220, 220, 0.9); /* light grayish background */
+  color: #333333;
+  border-bottom: 1px solid rgba(90, 122, 90, 0.3);
+}
+
+#workspaces button {
+  padding: 4px 8px;
+  margin: 0 2px;
+  background: transparent;
+  color: #5a7a5a;
+  border-radius: 6px;
+}
+
+#workspaces button.active {
+  background: rgba(90, 122, 90, 0.15);
+  color: #3f5a3f;
+  font-weight: 600;
+}
+
+#workspaces button:hover {
+  background: rgba(90, 122, 90, 0.25);
+  color: #2c3d2c;
+}
+
+/* Simplified widgets with normal emoji-style icons and dull green borders */
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#backlight,
+#custom-launcher,
+#custom-power,
+#custom-volume,
+#custom-updates,
+#custom-playerctl {
+  background-color: rgba(245, 245, 245, 0.9);
+  color: #2e2e2e;
+  padding: 5px 10px;
+  margin: 3px 4px;
+  border-radius: 8px;
+  border: 1px solid #5a7a5a;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+/* Specific states with subtle color changes */
+
+#battery.charging {
+  color: #5a7a5a;
+}
+
+#battery.critical {
+  color: #a94242;
+  background-color: rgba(220, 180, 180, 0.8);
+}
+
+#pulseaudio.muted {
+  color: #999999;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+#custom-power {
+  background: #a94242;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+#custom-launcher {
+  background: transparent;
+  font-size: 16px;
+  margin-left: 8px;
+  padding-right: 12px;
+  color: #4a4a4a;
+}
+
+#custom-volume:hover,
+#custom-updates:hover,
+#custom-playerctl:hover,
+#custom-power:hover {
+  background-color: rgba(90, 122, 90, 0.15);
+  box-shadow: none;
+}

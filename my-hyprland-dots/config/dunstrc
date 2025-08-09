@@ -1,0 +1,58 @@
+[global]
+    # Font with a Gothic vibe, change if you want
+    font = Cinzel Bold 10
+    # Transparency (0-1, 0 is fully opaque)
+    transparency = 0
+    # Geometry: x y width height (height is per notification)
+    geometry = 300x80+10+10
+    # Follow mouse focus (false for static)
+    follow_mouse = false
+    # Sort newest on top (true or false)
+    sort = false
+    # Max notifications shown
+    max_notifications = 5
+    # Frame width and color
+    frame_width = 2
+    frame_color = "#3f3a36"
+    # Corner radius (px)
+    corner_radius = 8
+    # Shadow offset and blur radius
+    shadow = 5
+    shadow_radius = 10
+    # Icon size
+    icon_size = 28
+
+[urgency_low]
+    timeout = 6
+    background = "#1b1b1b"
+    foreground = "#d8cfc4"
+    frame_color = "#3f3a36"
+
+[urgency_normal]
+    timeout = 10
+    background = "#1b1b1b"
+    foreground = "#d8cfc4"
+    frame_color = "#8c7e62"  # aged gold tone
+
+[urgency_critical]
+    timeout = 0
+    background = "#3f1a1a"  # dark blood red
+    foreground = "#f3d1c2"  # pale pinkish parchment
+    frame_color = "#7a3a3a"
+    # Make critical notifications stay on top and do not timeout
+
+[frame]
+    # Frame width around notification box
+    width = 2
+    color = "#3f3a36"
+
+[format]
+    # Notification format: icon + summary + body
+    format = "%i %s\n%b"
+
+[mouse]
+    # Action for clicks
+    middle = close
+    right = close
+    left = close
+
